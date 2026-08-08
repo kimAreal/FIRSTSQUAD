@@ -49,12 +49,19 @@
     }
 
     .member {
+      display: block;
       padding: 28px 0;
       border-top: 1px solid #333;
+      text-decoration: none;
+      color: inherit;
     }
 
     .member:last-child {
       border-bottom: 1px solid #333;
+    }
+
+    .member:active {
+      opacity: 0.6;
     }
 
     .number {
@@ -73,6 +80,13 @@
       font-size: 16px;
       line-height: 1.7;
     }
+
+    .arrow {
+      margin-top: 14px;
+      color: #df4938;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
   </style>
 </head>
 
@@ -89,29 +103,33 @@
     <h1>FIRST SQUAD</h1>
     <h2>第一分隊</h2>
 
-    <section class="member">
+    <a class="member" href="taeyoon.html">
       <div class="number">01 / CAPTAIN</div>
       <div class="name">姜泰允</div>
       <div class="role">隊長</div>
-    </section>
+      <div class="arrow">VIEW PROFILE →</div>
+    </a>
 
-    <section class="member">
+    <a class="member" href="jihun.html">
       <div class="number">02 / DEPUTY CAPTAIN</div>
       <div class="name">韓智勳</div>
       <div class="role">副隊長</div>
-    </section>
+      <div class="arrow">VIEW PROFILE →</div>
+    </a>
 
-    <section class="member">
+    <a class="member" href="minjae.html">
       <div class="number">03 / FIREFIGHTER</div>
       <div class="name">金敏宰</div>
       <div class="role">消防員</div>
-    </section>
+      <div class="arrow">VIEW PROFILE →</div>
+    </a>
 
-    <section class="member">
+    <a class="member" href="eunseok.html">
       <div class="number">04 / EMT</div>
       <div class="name">車恩碩</div>
       <div class="role">EMT</div>
-    </section>
+      <div class="arrow">VIEW PROFILE →</div>
+    </a>
 
   </main>
 
