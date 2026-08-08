@@ -32,9 +32,8 @@
 
     .hero-image {
       width: 100%;
-      margin-top: 42px;
       display: block;
-      object-fit: cover;
+      margin-top: 42px;
     }
 
     .eyebrow {
@@ -58,7 +57,7 @@
     }
 
     .section {
-      margin-top: 54px;
+      margin-top: 56px;
     }
 
     .section-title {
@@ -91,10 +90,18 @@
       font-size: 15px;
     }
 
-    .about {
+    .text {
       color: #a8adb4;
       font-size: 15px;
       line-height: 1.9;
+    }
+
+    .text p {
+      margin: 0 0 14px;
+    }
+
+    .text p:last-child {
+      margin-bottom: 0;
     }
 
     .tags {
@@ -104,7 +111,11 @@
     }
 
     .tag {
-      padding: 15px 14px;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
       border: 1px solid #2d3137;
       color: #c4c7cc;
       font-size: 14px;
@@ -123,13 +134,6 @@
       line-height: 1.7;
     }
 
-    .off-duty {
-      color: #a8adb4;
-      font-size: 15px;
-      line-height: 1.9;
-      margin-bottom: 24px;
-    }
-
     .card {
       padding: 24px 0;
       border-top: 1px solid #2d3137;
@@ -137,7 +141,7 @@
     }
 
     .card-title {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       font-size: 22px;
     }
 
@@ -145,10 +149,10 @@
       margin-bottom: 18px;
       color: #777;
       font-size: 13px;
-      letter-spacing: 1px;
+      line-height: 1.7;
     }
 
-    .card-detail {
+    .card-text {
       color: #a8adb4;
       font-size: 14px;
       line-height: 1.9;
@@ -164,6 +168,7 @@
       padding: 7px 0;
       color: #b4b8be;
       font-size: 14px;
+      line-height: 1.6;
     }
 
     .quick-facts {
@@ -185,9 +190,49 @@
       text-align: center;
     }
 
+    .impression {
+      padding: 24px 0;
+      border-top: 1px solid #2d3137;
+      border-bottom: 1px solid #2d3137;
+      color: #b4b8be;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .impression p {
+      margin: 0 0 12px;
+    }
+
+    .impression p:last-child {
+      margin-bottom: 0;
+    }
+
+    .story-hook {
+      padding: 26px 0;
+      border-top: 1px solid #d64737;
+      border-bottom: 1px solid #2d3137;
+      color: #d2d4d7;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .story-hook p {
+      margin: 0 0 12px;
+    }
+
+    .story-hook p:last-child {
+      margin-bottom: 0;
+      color: #888;
+    }
+
     @media (max-width: 520px) {
       h1 {
         font-size: 46px;
+      }
+
+      .page {
+        padding-left: 24px;
+        padding-right: 24px;
       }
     }
   </style>
@@ -210,6 +255,7 @@
     <h1>姜泰允</h1>
     <div class="english">KANG TAEYOON</div>
 
+    <!-- PROFILE -->
     <section class="section">
       <div class="section-title">PROFILE</div>
 
@@ -250,17 +296,30 @@
           <div class="value">ENTP</div>
         </div>
 
+        <div class="row">
+          <div class="label">其他</div>
+          <div class="value">搜救犬領犬員</div>
+        </div>
+
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section">
       <div class="section-title">ABOUT</div>
 
-      <div class="about">
-        第一分隊小隊長。平時痞氣健談，進入勤務後冷靜果斷。擅長特殊救助與現場指揮，也是隊員最信任的依靠之一。
+      <div class="text">
+        <p>
+          第一分隊小隊長，也是搜救犬 Rex 的固定搭檔。
+        </p>
+
+        <p>
+          平時健談、愛開玩笑，和第一次見面的人也能很快熟起來。真正進入勤務後卻會迅速收起笑容，判斷果斷、指揮明確。
+        </p>
       </div>
     </section>
 
+    <!-- SPECIALTY -->
     <section class="section">
       <div class="section-title">SPECIALTY</div>
 
@@ -270,10 +329,11 @@
         <div class="tag">高空救援</div>
         <div class="tag">繩索救援</div>
         <div class="tag">破壞救助</div>
-        <div class="tag">災害指揮</div>
+        <div class="tag">現場指揮</div>
       </div>
     </section>
 
+    <!-- CHARACTER -->
     <section class="section">
       <div class="section-title">CHARACTER</div>
 
@@ -287,23 +347,35 @@
       </div>
     </section>
 
+    <!-- ON DUTY -->
     <section class="section">
       <div class="section-title">ON DUTY</div>
 
+      <div class="text">
+        <p>警鈴響起後，他通常是最快收起玩笑的人。</p>
+      </div>
+
       <div class="list">
-        <div class="list-item">出勤前習慣親自確認車輛與裝備</div>
-        <div class="list-item">工作時判斷快速，對安全要求很高</div>
-        <div class="list-item">任務中不喜歡隊員逞強</div>
-        <div class="list-item">面對受困者時意外很有耐心</div>
-        <div class="list-item">警鈴響起後，私人事情一律靠後</div>
+        <div class="list-item">出勤前親自確認車輛與裝備</div>
+        <div class="list-item">現場判斷快，指揮風格明確</div>
+        <div class="list-item">不喜歡隊員為了逞強增加風險</div>
+        <div class="list-item">面對受困者時很有耐心</div>
+        <div class="list-item">私人事情永遠排在勤務之後</div>
       </div>
     </section>
 
+    <!-- OFF DUTY -->
     <section class="section">
       <div class="section-title">OFF DUTY</div>
 
-      <div class="off-duty">
-        休假時常出現在健身房、拳館、燒肉店或公路上。會自己下廚，黑咖啡幾乎不離手，也很喜歡往海邊和山區跑。
+      <div class="text">
+        <p>
+          沒有勤務時，他的生活很簡單。
+        </p>
+
+        <p>
+          健身、拳擊、做飯、騎重機，偶爾直接騎出市區。喜歡黑咖啡、燒肉，也很會煎牛排。天氣好的休假，比起待在人多的地方，更常往海邊或山區跑。
+        </p>
       </div>
 
       <div class="tags">
@@ -311,38 +383,44 @@
         <div class="tag">拳擊</div>
         <div class="tag">料理</div>
         <div class="tag">露營</div>
-        <div class="tag">自駕旅行</div>
         <div class="tag">重機</div>
         <div class="tag">黑咖啡</div>
         <div class="tag">燒肉</div>
+        <div class="tag">山海旅行</div>
       </div>
     </section>
 
+    <!-- PERSONAL ITEM -->
     <section class="section">
-      <div class="section-title">MOTORCYCLE</div>
+      <div class="section-title">PERSONAL ITEM</div>
 
       <div class="card">
         <div class="card-title">Yamaha MT-09 SP</div>
-        <div class="card-subtitle">890 c.c.｜深灰黑｜運動街車</div>
+        <div class="card-subtitle">
+          890 c.c.｜深灰黑｜運動街車
+        </div>
 
         <ul class="mini-list">
+          <li>平時通勤與休假使用</li>
           <li>騎乘風格穩定</li>
           <li>不飆車、不炫技</li>
-          <li>偏愛海岸線與山路</li>
-          <li>很少讓別人坐後座</li>
+          <li>偏愛濱海公路與山路</li>
         </ul>
       </div>
     </section>
 
+    <!-- PARTNER -->
     <section class="section">
-      <div class="section-title">K9 PARTNER</div>
+      <div class="section-title">PARTNER</div>
 
       <div class="card">
         <div class="card-title">REX｜雷克斯</div>
-        <div class="card-subtitle">5歲｜黃金獵犬｜搜救犬</div>
+        <div class="card-subtitle">
+          5歲｜黃金獵犬｜搜救犬
+        </div>
 
-        <div class="card-detail">
-          執勤時冷靜專注，下班後則是第一分隊的團寵。
+        <div class="card-text">
+          姜泰允的固定搜救搭檔。執勤時冷靜專注，回到分隊後則完全是另一副模樣。
         </div>
 
         <ul class="mini-list">
@@ -354,18 +432,49 @@
       </div>
     </section>
 
+    <!-- QUICK FACTS -->
     <section class="section">
       <div class="section-title">QUICK FACTS</div>
 
       <div class="quick-facts">
         <div class="fact">幾乎每天健身</div>
         <div class="fact">很會煎牛排</div>
-        <div class="fact">車子總是很乾淨</div>
-        <div class="fact">記性意外地好</div>
         <div class="fact">很會應付媒體</div>
         <div class="fact">被要電話是常態</div>
+        <div class="fact">工作空檔話很多</div>
+        <div class="fact">私服幾乎都是深色</div>
+        <div class="fact">記性意外地很好</div>
         <div class="fact">最討厭危險駕駛</div>
-        <div class="fact">嘴上嫌麻煩<br>實際很會照顧人</div>
+      </div>
+    </section>
+
+    <!-- FIRST IMPRESSION -->
+    <section class="section">
+      <div class="section-title">FIRST IMPRESSION</div>
+
+      <div class="impression">
+        <p>
+          第一眼很容易把他當成只會耍帥的那種類型。
+        </p>
+
+        <p>
+          真正跟過一次勤務，就很少有人還會這麼想。
+        </p>
+      </div>
+    </section>
+
+    <!-- STORY HOOK -->
+    <section class="section">
+      <div class="section-title">STORY HOOK</div>
+
+      <div class="story-hook">
+        <p>
+          他總是比所有人更早確認裝備，也比所有人更晚真正放鬆。
+        </p>
+
+        <p>
+          至於原因，他很少主動提起。
+        </p>
       </div>
     </section>
 
