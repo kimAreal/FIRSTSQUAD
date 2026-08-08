@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>姜泰允｜FIRST SQUAD</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -16,9 +19,9 @@
     }
 
     .page {
-      max-width: 800px;
+      max-width: 760px;
       margin: auto;
-      padding: 60px 28px 100px;
+      padding: 56px 28px 100px;
     }
 
     .back {
@@ -28,33 +31,46 @@
     }
 
     .eyebrow {
-      margin-top: 60px;
-      color: #df4938;
+      margin-top: 58px;
+      color: #d64737;
       font-size: 12px;
       letter-spacing: 3px;
     }
 
     h1 {
-      font-size: 50px;
-      margin: 15px 0 6px;
+      margin: 14px 0 6px;
+      font-size: 52px;
+      line-height: 1;
     }
 
     .english {
+      margin-bottom: 52px;
       color: #777;
-      letter-spacing: 3px;
-      margin-bottom: 50px;
+      font-size: 13px;
+      letter-spacing: 4px;
     }
 
-    .info {
-      border-top: 1px solid #333;
+    .section {
+      margin-top: 54px;
+    }
+
+    .section-title {
+      margin-bottom: 22px;
+      color: #d64737;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    .profile {
+      border-top: 1px solid #2d3137;
     }
 
     .row {
       display: flex;
       justify-content: space-between;
-      gap: 30px;
-      padding: 20px 0;
-      border-bottom: 1px solid #333;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #2d3137;
     }
 
     .label {
@@ -63,18 +79,109 @@
     }
 
     .value {
+      color: #f4f4f4;
       text-align: right;
+      font-size: 15px;
     }
 
-    h2 {
-      margin-top: 55px;
-      font-size: 20px;
-      color: #df4938;
-    }
-
-    p {
-      color: #aaa;
+    .about {
+      color: #a8adb4;
+      font-size: 15px;
       line-height: 1.9;
+    }
+
+    .tags {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 15px 14px;
+      border: 1px solid #2d3137;
+      color: #c4c7cc;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .list {
+      border-top: 1px solid #2d3137;
+    }
+
+    .list-item {
+      padding: 17px 0;
+      border-bottom: 1px solid #2d3137;
+      color: #b4b8be;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .off-duty {
+      color: #a8adb4;
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      padding: 24px 0;
+      border-top: 1px solid #2d3137;
+      border-bottom: 1px solid #2d3137;
+    }
+
+    .card-title {
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+
+    .card-subtitle {
+      margin-bottom: 18px;
+      color: #777;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .card-detail {
+      color: #a8adb4;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .mini-list {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mini-list li {
+      padding: 7px 0;
+      color: #b4b8be;
+      font-size: 14px;
+    }
+
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .fact {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: 1px solid #2d3137;
+      color: #c4c7cc;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 46px;
+      }
     }
   </style>
 </head>
@@ -90,35 +197,164 @@
     <h1>姜泰允</h1>
     <div class="english">KANG TAEYOON</div>
 
-    <section class="info">
+    <section class="section">
+      <div class="section-title">PROFILE</div>
 
-      <div class="row">
-        <div class="label">職位</div>
-        <div class="value">隊長</div>
+      <div class="profile">
+
+        <div class="row">
+          <div class="label">職位</div>
+          <div class="value">第一分隊｜小隊長</div>
+        </div>
+
+        <div class="row">
+          <div class="label">年齡</div>
+          <div class="value">28歲</div>
+        </div>
+
+        <div class="row">
+          <div class="label">生日</div>
+          <div class="value">8月10日</div>
+        </div>
+
+        <div class="row">
+          <div class="label">星座</div>
+          <div class="value">獅子座</div>
+        </div>
+
+        <div class="row">
+          <div class="label">身高</div>
+          <div class="value">190 cm</div>
+        </div>
+
+        <div class="row">
+          <div class="label">血型</div>
+          <div class="value">O型</div>
+        </div>
+
+        <div class="row">
+          <div class="label">MBTI</div>
+          <div class="value">ENTP</div>
+        </div>
+
       </div>
-
-      <div class="row">
-        <div class="label">年齡</div>
-        <div class="value">28</div>
-      </div>
-
-      <div class="row">
-        <div class="label">身高</div>
-        <div class="value">190 cm</div>
-      </div>
-
-      <div class="row">
-        <div class="label">MBTI</div>
-        <div class="value">ENTP</div>
-      </div>
-
     </section>
 
-    <h2>SPECIALTY</h2>
+    <section class="section">
+      <div class="section-title">ABOUT</div>
 
-    <p>
-      第一線消防救助指揮、特殊救助、火場應變與現場決策。
-    </p>
+      <div class="about">
+        第一分隊小隊長。平時痞氣健談，進入勤務後冷靜果斷。擅長特殊救助與現場指揮，也是隊員最信任的依靠之一。
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">SPECIALTY</div>
+
+      <div class="tags">
+        <div class="tag">火場搜索</div>
+        <div class="tag">特殊救助</div>
+        <div class="tag">高空救援</div>
+        <div class="tag">繩索救援</div>
+        <div class="tag">破壞救助</div>
+        <div class="tag">災害指揮</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">CHARACTER</div>
+
+      <div class="tags">
+        <div class="tag">外向健談</div>
+        <div class="tag">痞氣愛撩</div>
+        <div class="tag">冷靜果斷</div>
+        <div class="tag">責任感強</div>
+        <div class="tag">極度護短</div>
+        <div class="tag">不善示弱</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">ON DUTY</div>
+
+      <div class="list">
+        <div class="list-item">出勤前習慣親自確認車輛與裝備</div>
+        <div class="list-item">工作時判斷快速，對安全要求很高</div>
+        <div class="list-item">任務中不喜歡隊員逞強</div>
+        <div class="list-item">面對受困者時意外很有耐心</div>
+        <div class="list-item">警鈴響起後，私人事情一律靠後</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">OFF DUTY</div>
+
+      <div class="off-duty">
+        休假時常出現在健身房、拳館、燒肉店或公路上。會自己下廚，黑咖啡幾乎不離手，也很喜歡往海邊和山區跑。
+      </div>
+
+      <div class="tags">
+        <div class="tag">健身</div>
+        <div class="tag">拳擊</div>
+        <div class="tag">料理</div>
+        <div class="tag">露營</div>
+        <div class="tag">自駕旅行</div>
+        <div class="tag">重機</div>
+        <div class="tag">黑咖啡</div>
+        <div class="tag">燒肉</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">MOTORCYCLE</div>
+
+      <div class="card">
+        <div class="card-title">Yamaha MT-09 SP</div>
+        <div class="card-subtitle">890 c.c.｜深灰黑｜運動街車</div>
+
+        <ul class="mini-list">
+          <li>騎乘風格穩定</li>
+          <li>不飆車、不炫技</li>
+          <li>偏愛海岸線與山路</li>
+          <li>很少讓別人坐後座</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">K9 PARTNER</div>
+
+      <div class="card">
+        <div class="card-title">REX｜雷克斯</div>
+        <div class="card-subtitle">5歲｜黃金獵犬｜搜救犬</div>
+
+        <div class="card-detail">
+          執勤時冷靜專注，下班後則是第一分隊的團寵。
+        </div>
+
+        <ul class="mini-list">
+          <li>瓦礫搜救</li>
+          <li>山域搜救</li>
+          <li>失蹤人口搜索</li>
+          <li>氣味追蹤</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">QUICK FACTS</div>
+
+      <div class="quick-facts">
+        <div class="fact">幾乎每天健身</div>
+        <div class="fact">很會煎牛排</div>
+        <div class="fact">車子總是很乾淨</div>
+        <div class="fact">記性意外地好</div>
+        <div class="fact">很會應付媒體</div>
+        <div class="fact">被要電話是常態</div>
+        <div class="fact">最討厭危險駕駛</div>
+        <div class="fact">嘴上嫌麻煩<br>實際很會照顧人</div>
+      </div>
+    </section>
 
   </main>
 
