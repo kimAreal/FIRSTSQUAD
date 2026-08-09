@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>金敏宰｜FIRST SQUAD</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -16,9 +19,9 @@
     }
 
     .page {
-      max-width: 800px;
+      max-width: 760px;
       margin: auto;
-      padding: 60px 28px 100px;
+      padding: 56px 28px 100px;
     }
 
     .back {
@@ -27,34 +30,53 @@
       font-size: 14px;
     }
 
+    .hero-image {
+      width: 100%;
+      display: block;
+      margin-top: 42px;
+    }
+
     .eyebrow {
-      margin-top: 60px;
-      color: #df4938;
+      margin-top: 44px;
+      color: #d64737;
       font-size: 12px;
       letter-spacing: 3px;
     }
 
     h1 {
-      font-size: 50px;
-      margin: 15px 0 6px;
+      margin: 14px 0 6px;
+      font-size: 52px;
+      line-height: 1;
     }
 
     .english {
+      margin-bottom: 52px;
       color: #777;
-      letter-spacing: 3px;
-      margin-bottom: 50px;
+      font-size: 13px;
+      letter-spacing: 4px;
     }
 
-    .info {
-      border-top: 1px solid #333;
+    .section {
+      margin-top: 56px;
+    }
+
+    .section-title {
+      margin-bottom: 22px;
+      color: #d64737;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    .profile {
+      border-top: 1px solid #2d3137;
     }
 
     .row {
       display: flex;
       justify-content: space-between;
-      gap: 30px;
-      padding: 20px 0;
-      border-bottom: 1px solid #333;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #2d3137;
     }
 
     .label {
@@ -63,18 +85,151 @@
     }
 
     .value {
+      color: #f4f4f4;
       text-align: right;
+      font-size: 15px;
     }
 
-    h2 {
-      margin-top: 55px;
-      font-size: 20px;
-      color: #df4938;
-    }
-
-    p {
-      color: #aaa;
+    .text {
+      color: #a8adb4;
+      font-size: 15px;
       line-height: 1.9;
+    }
+
+    .text p {
+      margin: 0 0 14px;
+    }
+
+    .text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tags {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: 1px solid #2d3137;
+      color: #c4c7cc;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .list {
+      margin-top: 20px;
+      border-top: 1px solid #2d3137;
+    }
+
+    .list-item {
+      padding: 17px 0;
+      border-bottom: 1px solid #2d3137;
+      color: #b4b8be;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .card {
+      padding: 24px 0;
+      border-top: 1px solid #2d3137;
+      border-bottom: 1px solid #2d3137;
+    }
+
+    .card-title {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card-subtitle {
+      margin-bottom: 18px;
+      color: #777;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .mini-list {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mini-list li {
+      padding: 7px 0;
+      color: #b4b8be;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .fact {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: 1px solid #2d3137;
+      color: #c4c7cc;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .impression {
+      padding: 24px 0;
+      border-top: 1px solid #2d3137;
+      border-bottom: 1px solid #2d3137;
+      color: #b4b8be;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .impression p {
+      margin: 0 0 12px;
+    }
+
+    .impression p:last-child {
+      margin-bottom: 0;
+    }
+
+    .story-hook {
+      padding: 26px 0;
+      border-top: 1px solid #d64737;
+      border-bottom: 1px solid #2d3137;
+      color: #d2d4d7;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .story-hook p {
+      margin: 0 0 12px;
+    }
+
+    .story-hook p:last-child {
+      margin-bottom: 0;
+      color: #888;
+    }
+
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 46px;
+      }
+
+      .page {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
     }
   </style>
 </head>
@@ -85,35 +240,221 @@
 
     <a class="back" href="team.html">← 返回第一分隊</a>
 
+    <img
+      src="FBF654E9-52D3-44FB-A4E5-149B80234C05.jpeg"
+      alt="金敏宰"
+      class="hero-image"
+    >
+
     <div class="eyebrow">03 / FIREFIGHTER</div>
 
     <h1>金敏宰</h1>
     <div class="english">KIM MINJAE</div>
 
-    <section class="info">
+    <!-- PROFILE -->
+    <section class="section">
+      <div class="section-title">PROFILE</div>
 
-      <div class="row">
-        <div class="label">職位</div>
-        <div class="value">消防員</div>
+      <div class="profile">
+
+        <div class="row">
+          <div class="label">職位</div>
+          <div class="value">第一分隊｜消防員</div>
+        </div>
+
+        <div class="row">
+          <div class="label">年齡</div>
+          <div class="value">26歲</div>
+        </div>
+
+        <div class="row">
+          <div class="label">生日</div>
+          <div class="value">11月3日</div>
+        </div>
+
+        <div class="row">
+          <div class="label">星座</div>
+          <div class="value">天蠍座</div>
+        </div>
+
+        <div class="row">
+          <div class="label">身高</div>
+          <div class="value">183 cm</div>
+        </div>
+
+        <div class="row">
+          <div class="label">血型</div>
+          <div class="value">O型</div>
+        </div>
+
+        <div class="row">
+          <div class="label">MBTI</div>
+          <div class="value">ESFP</div>
+        </div>
+
+        <div class="row">
+          <div class="label">其他</div>
+          <div class="value">器材｜繩索專精</div>
+        </div>
+
       </div>
-
-      <div class="row">
-        <div class="label">年齡</div>
-        <div class="value">26</div>
-      </div>
-
-      <div class="row">
-        <div class="label">身高</div>
-        <div class="value">183 cm</div>
-      </div>
-
     </section>
 
-    <h2>SPECIALTY</h2>
+    <!-- ABOUT -->
+    <section class="section">
+      <div class="section-title">ABOUT</div>
 
-    <p>
-      消防器材、繩索救助、高空救援、破壞作業與裝備維護。
-    </p>
+      <div class="text">
+        <p>
+          第一分隊裡最常笑的人之一。
+        </p>
+
+        <p>
+          平時陽光健談、反應快，也很會替大家接住尷尬。真正進入勤務後卻會立刻收起玩笑，對器材、繩索與操作細節要求得比誰都嚴格。
+        </p>
+      </div>
+    </section>
+
+    <!-- SPECIALTY -->
+    <section class="section">
+      <div class="section-title">SPECIALTY</div>
+
+      <div class="tags">
+        <div class="tag">器材管理</div>
+        <div class="tag">裝備維護</div>
+        <div class="tag">故障排除</div>
+        <div class="tag">繩索救援</div>
+        <div class="tag">高空救助</div>
+        <div class="tag">特殊救援</div>
+      </div>
+    </section>
+
+    <!-- CHARACTER -->
+    <section class="section">
+      <div class="section-title">CHARACTER</div>
+
+      <div class="tags">
+        <div class="tag">陽光健談</div>
+        <div class="tag">自來熟</div>
+        <div class="tag">熱情坦率</div>
+        <div class="tag">細心可靠</div>
+        <div class="tag">行動派</div>
+        <div class="tag">不善示弱</div>
+      </div>
+    </section>
+
+    <!-- ON DUTY -->
+    <section class="section">
+      <div class="section-title">ON DUTY</div>
+
+      <div class="text">
+        <p>
+          平時最愛鬧，真正出勤時卻很少有人比他更專注。
+        </p>
+      </div>
+
+      <div class="list">
+        <div class="list-item">出勤前確認繩索與救助器材</div>
+        <div class="list-item">對裝備狀況非常敏感</div>
+        <div class="list-item">遇到器材異常會先處理再行動</div>
+        <div class="list-item">高空與繩索勤務時特別冷靜</div>
+        <div class="list-item">任務結束後習慣親自整理與復位</div>
+      </div>
+    </section>
+
+    <!-- OFF DUTY -->
+    <section class="section">
+      <div class="section-title">OFF DUTY</div>
+
+      <div class="text">
+        <p>
+          休假時，他經常回家幫忙五金行。
+        </p>
+
+        <p>
+          對工具、零件和機械有異常高的熟悉度，修東西對他來說幾乎比休息更自然。沒待在五金行的時候，通常不是找吃的，就是騎車、運動，或跑去陪動物。
+        </p>
+      </div>
+
+      <div class="tags">
+        <div class="tag">五金行</div>
+        <div class="tag">工具研究</div>
+        <div class="tag">修理物品</div>
+        <div class="tag">重機</div>
+        <div class="tag">美食</div>
+        <div class="tag">重訓</div>
+        <div class="tag">流浪動物</div>
+        <div class="tag">隊友聚餐</div>
+      </div>
+    </section>
+
+    <!-- PERSONAL ITEM -->
+    <section class="section">
+      <div class="section-title">PERSONAL ITEM</div>
+
+      <div class="card">
+        <div class="card-title">TOOLKIT</div>
+
+        <div class="card-subtitle">
+          PERSONAL MAINTENANCE KIT
+        </div>
+
+        <ul class="mini-list">
+          <li>常備多用途工具</li>
+          <li>習慣依尺寸分類</li>
+          <li>用完一定歸位</li>
+          <li>對工具狀況非常敏感</li>
+          <li>小故障通常不假手他人</li>
+          <li>看見鬆動的零件會忍不住處理</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="section">
+      <div class="section-title">QUICK FACTS</div>
+
+      <div class="quick-facts">
+        <div class="fact">家裡經營五金行</div>
+        <div class="fact">很會修東西</div>
+        <div class="fact">工具一定分類放好</div>
+        <div class="fact">睡眠很淺</div>
+        <div class="fact">笑點很低</div>
+        <div class="fact">很容易跟陌生人聊起來</div>
+        <div class="fact">對動物幾乎沒有抵抗力</div>
+        <div class="fact">壓力大時會整理器材</div>
+      </div>
+    </section>
+
+    <!-- FIRST IMPRESSION -->
+    <section class="section">
+      <div class="section-title">FIRST IMPRESSION</div>
+
+      <div class="impression">
+        <p>
+          第一眼通常只會覺得他很好相處。
+        </p>
+
+        <p>
+          真正看過他工作，才會發現那份隨和底下，藏著非常嚴格的專業標準。
+        </p>
+      </div>
+    </section>
+
+    <!-- STORY HOOK -->
+    <section class="section">
+      <div class="section-title">STORY HOOK</div>
+
+      <div class="story-hook">
+        <p>
+          他對每一條繩索、每一件器材都習慣多確認一次。
+        </p>
+
+        <p>
+          像是只要準備得夠完整，就不會再有什麼來不及。
+        </p>
+      </div>
+    </section>
 
   </main>
 
