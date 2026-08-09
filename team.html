@@ -19,9 +19,9 @@
     }
 
     .page {
-      padding: 60px 28px 100px;
-      max-width: 800px;
+      max-width: 760px;
       margin: auto;
+      padding: 64px 28px 100px;
     }
 
     .back {
@@ -30,62 +30,93 @@
       font-size: 14px;
     }
 
+    .hero {
+      margin-top: 64px;
+      margin-bottom: 72px;
+    }
+
     .eyebrow {
-      margin-top: 60px;
+      color: #d64737;
       font-size: 12px;
-      letter-spacing: 4px;
-      color: #888;
+      letter-spacing: 3px;
+      margin-bottom: 14px;
     }
 
     h1 {
-      font-size: 48px;
-      margin: 14px 0 8px;
+      margin: 0 0 10px;
+      font-size: 54px;
+      line-height: 1;
     }
 
-    h2 {
-      margin: 0 0 60px;
-      font-size: 28px;
-      color: #df4938;
+    .subtitle {
+      color: #777;
+      font-size: 14px;
+      letter-spacing: 4px;
+    }
+
+    .member-list {
+      border-top: 1px solid #2d3137;
     }
 
     .member {
       display: block;
-      padding: 28px 0;
-      border-top: 1px solid #333;
+      padding: 34px 0;
+      border-bottom: 1px solid #2d3137;
       text-decoration: none;
       color: inherit;
     }
 
-    .member:last-child {
-      border-bottom: 1px solid #333;
+    .member-number {
+      color: #d64737;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
     }
 
-    .member:active {
-      opacity: 0.6;
+    .member-name {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.15;
     }
 
-    .number {
+    .member-english {
+      margin-top: 7px;
       color: #777;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    .member-line {
+      margin-top: 22px;
+      color: #a8adb4;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .view {
+      margin-top: 24px;
+      color: #d64737;
       font-size: 12px;
       letter-spacing: 2px;
     }
 
-    .name {
-      font-size: 25px;
-      margin: 12px 0;
+    .member:hover .view {
+      opacity: 0.7;
     }
 
-    .role {
-      color: #999;
-      font-size: 16px;
-      line-height: 1.7;
-    }
+    @media (max-width: 520px) {
+      .page {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
 
-    .arrow {
-      margin-top: 14px;
-      color: #df4938;
-      font-size: 13px;
-      letter-spacing: 1px;
+      h1 {
+        font-size: 46px;
+      }
+
+      .member-name {
+        font-size: 31px;
+      }
     }
   </style>
 </head>
@@ -96,40 +127,63 @@
 
     <a class="back" href="index.html">← 返回首頁</a>
 
-    <div class="eyebrow">
-      CITY FIRE & RESCUE DEPARTMENT
-    </div>
+    <section class="hero">
+      <div class="eyebrow">PERSONNEL</div>
+      <h1>FIRST SQUAD</h1>
+      <div class="subtitle">第一分隊</div>
+    </section>
 
-    <h1>FIRST SQUAD</h1>
-    <h2>第一分隊</h2>
+    <section class="member-list">
 
-    <a class="member" href="taeyoon.html">
-      <div class="number">01 / CAPTAIN</div>
-      <div class="name">姜泰允</div>
-      <div class="role">隊長</div>
-      <div class="arrow">VIEW PROFILE →</div>
-    </a>
+      <a class="member" href="taeyoon.html">
+        <div class="member-number">01 / CAPTAIN</div>
+        <h2 class="member-name">姜泰允</h2>
+        <div class="member-english">KANG TAEYOON</div>
 
-    <a class="member" href="jihun.html">
-      <div class="number">02 / DEPUTY CAPTAIN</div>
-      <div class="name">韓智勳</div>
-      <div class="role">副隊長</div>
-      <div class="arrow">VIEW PROFILE →</div>
-    </a>
+        <div class="member-line">
+          警鈴響起後，他總是最快收起笑容
+        </div>
 
-    <a class="member" href="minjae.html">
-      <div class="number">03 / FIREFIGHTER</div>
-      <div class="name">金敏宰</div>
-      <div class="role">消防員</div>
-      <div class="arrow">VIEW PROFILE →</div>
-    </a>
+        <div class="view">VIEW PROFILE →</div>
+      </a>
 
-    <a class="member" href="eunseok.html">
-      <div class="number">04 / EMT</div>
-      <div class="name">車恩碩</div>
-      <div class="role">EMT</div>
-      <div class="arrow">VIEW PROFILE →</div>
-    </a>
+      <a class="member" href="jihun.html">
+        <div class="member-number">02 / DEPUTY CAPTAIN</div>
+        <h2 class="member-name">韓智勳</h2>
+        <div class="member-english">HAN JIHUN</div>
+
+        <div class="member-line">
+          所有人往前以前，他先確認退路
+        </div>
+
+        <div class="view">VIEW PROFILE →</div>
+      </a>
+
+      <a class="member" href="minjae.html">
+        <div class="member-number">03 / FIREFIGHTER</div>
+        <h2 class="member-name">金敏宰</h2>
+        <div class="member-english">KIM MINJAE</div>
+
+        <div class="member-line">
+          第一分隊裡，最常聽見他的笑聲
+        </div>
+
+        <div class="view">VIEW PROFILE →</div>
+      </a>
+
+      <a class="member" href="eunseok.html">
+        <div class="member-number">04 / EMT</div>
+        <h2 class="member-name">車恩碩</h2>
+        <div class="member-english">CHA EUNSEOK</div>
+
+        <div class="member-line">
+          越混亂的現場，他反而越安靜
+        </div>
+
+        <div class="view">VIEW PROFILE →</div>
+      </a>
+
+    </section>
 
   </main>
 
