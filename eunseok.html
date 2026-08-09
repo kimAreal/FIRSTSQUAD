@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>車恩碩｜FIRST SQUAD</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -16,9 +19,9 @@
     }
 
     .page {
-      max-width: 800px;
+      max-width: 760px;
       margin: auto;
-      padding: 60px 28px 100px;
+      padding: 56px 28px 100px;
     }
 
     .back {
@@ -27,34 +30,53 @@
       font-size: 14px;
     }
 
+    .hero-image {
+      width: 100%;
+      display: block;
+      margin-top: 42px;
+    }
+
     .eyebrow {
-      margin-top: 60px;
-      color: #df4938;
+      margin-top: 44px;
+      color: #d64737;
       font-size: 12px;
       letter-spacing: 3px;
     }
 
     h1 {
-      font-size: 50px;
-      margin: 15px 0 6px;
+      margin: 14px 0 6px;
+      font-size: 52px;
+      line-height: 1;
     }
 
     .english {
+      margin-bottom: 52px;
       color: #777;
-      letter-spacing: 3px;
-      margin-bottom: 50px;
+      font-size: 13px;
+      letter-spacing: 4px;
     }
 
-    .info {
-      border-top: 1px solid #333;
+    .section {
+      margin-top: 56px;
+    }
+
+    .section-title {
+      margin-bottom: 22px;
+      color: #d64737;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    .profile {
+      border-top: 1px solid #2d3137;
     }
 
     .row {
       display: flex;
       justify-content: space-between;
-      gap: 30px;
-      padding: 20px 0;
-      border-bottom: 1px solid #333;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #2d3137;
     }
 
     .label {
@@ -63,18 +85,158 @@
     }
 
     .value {
+      color: #f4f4f4;
       text-align: right;
+      font-size: 15px;
     }
 
-    h2 {
-      margin-top: 55px;
-      font-size: 20px;
-      color: #df4938;
-    }
-
-    p {
-      color: #aaa;
+    .text {
+      color: #a8adb4;
+      font-size: 15px;
       line-height: 1.9;
+    }
+
+    .text p {
+      margin: 0 0 14px;
+    }
+
+    .text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tags {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tag {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: 1px solid #2d3137;
+      color: #c4c7cc;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .list {
+      margin-top: 20px;
+      border-top: 1px solid #2d3137;
+    }
+
+    .list-item {
+      padding: 17px 0;
+      border-bottom: 1px solid #2d3137;
+      color: #b4b8be;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .card {
+      padding: 24px 0;
+      border-top: 1px solid #2d3137;
+      border-bottom: 1px solid #2d3137;
+    }
+
+    .card-title {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card-subtitle {
+      margin-bottom: 18px;
+      color: #777;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .mini-list {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mini-list li {
+      padding: 7px 0;
+      color: #b4b8be;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .fact {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: 1px solid #2d3137;
+      color: #c4c7cc;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .impression {
+      padding: 24px 0;
+      border-top: 1px solid #2d3137;
+      border-bottom: 1px solid #2d3137;
+      color: #b4b8be;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .impression p {
+      margin: 0 0 12px;
+    }
+
+    .impression p:last-child {
+      margin-bottom: 0;
+    }
+
+    .story-hook {
+      padding: 26px 0;
+      border-top: 1px solid #d64737;
+      border-bottom: 1px solid #2d3137;
+      color: #d2d4d7;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .story-hook p {
+      margin: 0 0 12px;
+    }
+
+    .story-hook p:last-child {
+      margin-bottom: 0;
+    }
+
+    .status {
+      margin-top: 22px;
+      color: #777;
+      font-size: 12px;
+      letter-spacing: 2px;
+      line-height: 2;
+    }
+
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 46px;
+      }
+
+      .page {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
     }
   </style>
 </head>
@@ -85,35 +247,230 @@
 
     <a class="back" href="team.html">← 返回第一分隊</a>
 
+    <img
+      src="604453CB-41B5-46B4-A63A-96F5332CFDA4.png"
+      alt="車恩碩"
+      class="hero-image"
+    >
+
     <div class="eyebrow">04 / EMT</div>
 
     <h1>車恩碩</h1>
     <div class="english">CHA EUNSEOK</div>
 
-    <section class="info">
+    <!-- PROFILE -->
+    <section class="section">
+      <div class="section-title">PROFILE</div>
 
-      <div class="row">
-        <div class="label">職位</div>
-        <div class="value">EMT</div>
+      <div class="profile">
+
+        <div class="row">
+          <div class="label">職位</div>
+          <div class="value">第一分隊｜EMT</div>
+        </div>
+
+        <div class="row">
+          <div class="label">年齡</div>
+          <div class="value">24歲</div>
+        </div>
+
+        <div class="row">
+          <div class="label">生日</div>
+          <div class="value">5月29日</div>
+        </div>
+
+        <div class="row">
+          <div class="label">星座</div>
+          <div class="value">雙子座</div>
+        </div>
+
+        <div class="row">
+          <div class="label">身高</div>
+          <div class="value">188 cm</div>
+        </div>
+
+        <div class="row">
+          <div class="label">體重</div>
+          <div class="value">84 kg</div>
+        </div>
+
+        <div class="row">
+          <div class="label">血型</div>
+          <div class="value">A型</div>
+        </div>
+
+        <div class="row">
+          <div class="label">MBTI</div>
+          <div class="value">ISTJ</div>
+        </div>
+
+        <div class="row">
+          <div class="label">其他</div>
+          <div class="value">高級救護技術員 EMT-P</div>
+        </div>
+
       </div>
-
-      <div class="row">
-        <div class="label">年齡</div>
-        <div class="value">24</div>
-      </div>
-
-      <div class="row">
-        <div class="label">身高</div>
-        <div class="value">188 cm</div>
-      </div>
-
     </section>
 
-    <h2>SPECIALTY</h2>
+    <!-- ABOUT -->
+    <section class="section">
+      <div class="section-title">ABOUT</div>
 
-    <p>
-      緊急醫療處置、傷患評估、院前救護與救援現場醫療支援。
-    </p>
+      <div class="text">
+        <p>
+          第一分隊的醫療核心，也是重大救援現場最後一道生命防線。
+        </p>
+
+        <p>
+          話不多，做事卻比任何人都細。面對傷患時冷靜得近乎沒有情緒，熟悉他的人則知道，那份沉默底下其實藏著很柔軟的一面。
+        </p>
+      </div>
+    </section>
+
+    <!-- SPECIALTY -->
+    <section class="section">
+      <div class="section-title">SPECIALTY</div>
+
+      <div class="tags">
+        <div class="tag">高級救命術</div>
+        <div class="tag">創傷處置</div>
+        <div class="tag">傷患分級</div>
+        <div class="tag">藥物處置</div>
+        <div class="tag">止血固定</div>
+        <div class="tag">災害醫療</div>
+      </div>
+    </section>
+
+    <!-- CHARACTER -->
+    <section class="section">
+      <div class="section-title">CHARACTER</div>
+
+      <div class="tags">
+        <div class="tag">沉默冷靜</div>
+        <div class="tag">溫柔細膩</div>
+        <div class="tag">自律可靠</div>
+        <div class="tag">耐心謹慎</div>
+        <div class="tag">容易心軟</div>
+        <div class="tag">不善傾訴</div>
+      </div>
+    </section>
+
+    <!-- ON DUTY -->
+    <section class="section">
+      <div class="section-title">ON DUTY</div>
+
+      <div class="text">
+        <p>
+          越混亂的現場，他反而越安靜。
+        </p>
+      </div>
+
+      <div class="list">
+        <div class="list-item">優先確認傷患生命徵象</div>
+        <div class="list-item">處置時動作精準、不慌不亂</div>
+        <div class="list-item">習慣先完成救護，再處理自己的狀況</div>
+        <div class="list-item">對醫療器材與藥品狀態要求嚴格</div>
+        <div class="list-item">重大勤務結束後會重新檢查每一道處置流程</div>
+      </div>
+    </section>
+
+    <!-- OFF DUTY -->
+    <section class="section">
+      <div class="section-title">OFF DUTY</div>
+
+      <div class="text">
+        <p>
+          休假時，他反而很少把行程排滿。
+        </p>
+
+        <p>
+          喜歡在傍晚或深夜出門，帶著相機散步、去河堤吹風，偶爾繞去便利商店買點東西再回家。比起熱鬧聚會，他更習慣待在安靜的空間裡，整理照片、聽音樂，或只是坐著發呆。
+        </p>
+      </div>
+
+      <div class="tags">
+        <div class="tag">夜間攝影</div>
+        <div class="tag">河堤散步</div>
+        <div class="tag">深夜便利商店</div>
+        <div class="tag">整理照片</div>
+        <div class="tag">聽音樂</div>
+        <div class="tag">看海</div>
+        <div class="tag">陪妹妹</div>
+        <div class="tag">一個人發呆</div>
+      </div>
+    </section>
+
+    <!-- PERSONAL ITEM -->
+    <section class="section">
+      <div class="section-title">PERSONAL ITEM</div>
+
+      <div class="card">
+        <div class="card-title">EMT WATCH</div>
+
+        <div class="card-subtitle">
+          BLACK SPORTS WATCH
+        </div>
+
+        <ul class="mini-list">
+          <li>勤務時幾乎不離手</li>
+          <li>可快速確認時間與生命徵象</li>
+          <li>外觀簡單，沒有多餘裝飾</li>
+          <li>即使休假也習慣戴著</li>
+          <li>表面留有長期勤務造成的細小使用痕跡</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="section">
+      <div class="section-title">QUICK FACTS</div>
+
+      <div class="quick-facts">
+        <div class="fact">家裡幾乎都是醫療從業者</div>
+        <div class="fact">習慣喝咖啡</div>
+        <div class="fact">很少說廢話</div>
+        <div class="fact">睡眠很淺</div>
+        <div class="fact">飲食偏清淡</div>
+        <div class="fact">很會照顧傷口</div>
+        <div class="fact">偶爾會一本正經地冷幽默</div>
+        <div class="fact">對小孩特別有耐心</div>
+      </div>
+    </section>
+
+    <!-- FIRST IMPRESSION -->
+    <section class="section">
+      <div class="section-title">FIRST IMPRESSION</div>
+
+      <div class="impression">
+        <p>
+          第一眼很容易覺得他冷淡、不太好接近。
+        </p>
+
+        <p>
+          真正需要他的時候才會發現，他只是把關心全部放進了行動裡。
+        </p>
+      </div>
+    </section>
+
+    <!-- STORY HOOK -->
+    <section class="section">
+      <div class="section-title">STORY HOOK</div>
+
+      <div class="story-hook">
+        <p>
+          最近，他第一次搬離消防局宿舍，成為了一間公寓的新租客。
+        </p>
+
+        <p>
+          只是打開門的那一刻，他發現新室友似乎有點眼熟。
+        </p>
+
+        <div class="status">
+          ROOMMATE STATUS — ACTIVE<br>
+          5 MIN FROM STATION
+        </div>
+      </div>
+    </section>
 
   </main>
 
