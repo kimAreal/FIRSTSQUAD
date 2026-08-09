@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>韓智勳｜FIRST SQUAD</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -16,9 +19,9 @@
     }
 
     .page {
-      max-width: 800px;
+      max-width: 760px;
       margin: auto;
-      padding: 60px 28px 100px;
+      padding: 56px 28px 100px;
     }
 
     .back {
@@ -27,34 +30,53 @@
       font-size: 14px;
     }
 
+    .hero-image {
+      width: 100%;
+      display: block;
+      margin-top: 42px;
+    }
+
     .eyebrow {
-      margin-top: 60px;
-      color: #df4938;
+      margin-top: 44px;
+      color: #d64737;
       font-size: 12px;
       letter-spacing: 3px;
     }
 
     h1 {
-      font-size: 50px;
-      margin: 15px 0 6px;
+      margin: 14px 0 6px;
+      font-size: 52px;
+      line-height: 1;
     }
 
     .english {
+      margin-bottom: 52px;
       color: #777;
-      letter-spacing: 3px;
-      margin-bottom: 50px;
+      font-size: 13px;
+      letter-spacing: 4px;
     }
 
-    .info {
-      border-top: 1px solid #333;
+    .section {
+      margin-top: 56px;
+    }
+
+    .section-title {
+      margin-bottom: 22px;
+      color: #d64737;
+      font-size: 12px;
+      letter-spacing: 3px;
+    }
+
+    .profile {
+      border-top: 1px solid #2d3137;
     }
 
     .row {
       display: flex;
       justify-content: space-between;
-      gap: 30px;
-      padding: 20px 0;
-      border-bottom: 1px solid #333;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #2d3137;
     }
 
     .label {
@@ -63,18 +85,156 @@
     }
 
     .value {
+      color: #f4f4f4;
       text-align: right;
+      font-size: 15px;
     }
 
-    h2 {
-      margin-top: 55px;
-      font-size: 20px;
-      color: #df4938;
-    }
-
-    p {
-      color: #aaa;
+    .text {
+      color: #a8adb4;
+      font-size: 15px;
       line-height: 1.9;
+    }
+
+    .text p {
+      margin: 0 0 14px;
+    }
+
+    .text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .tags {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .tag {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: 1px solid #2d3137;
+      color: #c4c7cc;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .list {
+      border-top: 1px solid #2d3137;
+    }
+
+    .list-item {
+      padding: 17px 0;
+      border-bottom: 1px solid #2d3137;
+      color: #b4b8be;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .card {
+      padding: 24px 0;
+      border-top: 1px solid #2d3137;
+      border-bottom: 1px solid #2d3137;
+    }
+
+    .card-title {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card-subtitle {
+      margin-bottom: 18px;
+      color: #777;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .mini-list {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .mini-list li {
+      padding: 7px 0;
+      color: #b4b8be;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .quick-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .fact {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: 1px solid #2d3137;
+      color: #c4c7cc;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .impression {
+      padding: 24px 0;
+      border-top: 1px solid #2d3137;
+      border-bottom: 1px solid #2d3137;
+      color: #b4b8be;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .impression p {
+      margin: 0 0 12px;
+    }
+
+    .impression p:last-child {
+      margin-bottom: 0;
+    }
+
+    .story-hook {
+      padding: 26px 0;
+      border-top: 1px solid #d64737;
+      border-bottom: 1px solid #2d3137;
+      color: #d2d4d7;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .story-hook p {
+      margin: 0 0 12px;
+    }
+
+    .story-hook p:last-child {
+      margin-bottom: 0;
+    }
+
+    .status {
+      margin-top: 22px;
+      color: #777;
+      font-size: 12px;
+      letter-spacing: 2px;
+      line-height: 2;
+    }
+
+    @media (max-width: 520px) {
+      h1 {
+        font-size: 46px;
+      }
+
+      .page {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
     }
   </style>
 </head>
@@ -85,37 +245,127 @@
 
     <a class="back" href="team.html">← 返回第一分隊</a>
 
+    <img
+      src="17619B86-C080-4270-A018-9ED8BCA01FBC.png"
+      alt="韓智勳"
+      class="hero-image"
+    >
+
     <div class="eyebrow">02 / DEPUTY CAPTAIN</div>
 
     <h1>韓智勳</h1>
     <div class="english">HAN JIHUN</div>
 
-    <section class="info">
+    <!-- PROFILE -->
+    <section class="section">
+      <div class="section-title">PROFILE</div>
 
-      <div class="row">
-        <div class="label">職位</div>
-        <div class="value">副隊長</div>
+      <div class="profile">
+
+        <div class="row">
+          <div class="label">職位</div>
+          <div class="value">第一分隊｜副隊長</div>
+        </div>
+
+        <div class="row">
+          <div class="label">年齡</div>
+          <div class="value">31歲</div>
+        </div>
+
+        <div class="row">
+          <div class="label">生日</div>
+          <div class="value">2月17日</div>
+        </div>
+
+        <div class="row">
+          <div class="label">星座</div>
+          <div class="value">水瓶座</div>
+        </div>
+
+        <div class="row">
+          <div class="label">身高</div>
+          <div class="value">186 cm</div>
+        </div>
+
+        <div class="row">
+          <div class="label">MBTI</div>
+          <div class="value">ISTJ</div>
+        </div>
+
+        <div class="row">
+          <div class="label">其他</div>
+          <div class="value">現場安全官｜第二指揮</div>
+        </div>
+
       </div>
-
-      <div class="row">
-        <div class="label">年齡</div>
-        <div class="value">31</div>
-      </div>
-
-      <div class="row">
-        <div class="label">身高</div>
-        <div class="value">186 cm</div>
-      </div>
-
     </section>
 
-    <h2>SPECIALTY</h2>
+    <!-- ABOUT -->
+    <section class="section">
+      <div class="section-title">ABOUT</div>
 
-    <p>
-      現場第二指揮、安全管理、風險判斷與隊員狀態監控。
-    </p>
+      <div class="text">
+        <p>
+          第一分隊副隊長兼現場安全官。成熟、守序，習慣在所有人行動之前先把風險、退路與備援確認清楚。
+        </p>
 
-  </main>
+        <p>
+          看起來安靜克制，熟悉之後才會慢慢發現，他其實比想像中更健談，也很會冷面吐槽。
+        </p>
+      </div>
+    </section>
 
-</body>
-</html>
+    <!-- SPECIALTY -->
+    <section class="section">
+      <div class="section-title">SPECIALTY</div>
+
+      <div class="tags">
+        <div class="tag">危害辨識</div>
+        <div class="tag">安全評估</div>
+        <div class="tag">撤離規劃</div>
+        <div class="tag">人員管制</div>
+        <div class="tag">第二指揮</div>
+        <div class="tag">事故復盤</div>
+      </div>
+    </section>
+
+    <!-- CHARACTER -->
+    <section class="section">
+      <div class="section-title">CHARACTER</div>
+
+      <div class="tags">
+        <div class="tag">沉穩理性</div>
+        <div class="tag">嚴謹守序</div>
+        <div class="tag">公私分明</div>
+        <div class="tag">克制可靠</div>
+        <div class="tag">冷面幽默</div>
+        <div class="tag">過度負責</div>
+      </div>
+    </section>
+
+    <!-- ON DUTY -->
+    <section class="section">
+      <div class="section-title">ON DUTY</div>
+
+      <div class="text">
+        <p>
+          他不追求零風險，但一定會確認風險可控，而且所有人都有退路。
+        </p>
+      </div>
+
+      <div class="list">
+        <div class="list-item">先評估，再執行</div>
+        <div class="list-item">重大勤務前確認撤離與備援</div>
+        <div class="list-item">對安全程序要求很高</div>
+        <div class="list-item">不喜歡無計畫逞強</div>
+        <div class="list-item">隊員犯錯先處理問題，再檢討責任</div>
+      </div>
+    </section>
+
+    <!-- OFF DUTY -->
+    <section class="section">
+      <div class="section-title">OFF DUTY</div>
+
+      <div class="text">
+        <p>
+          離開
